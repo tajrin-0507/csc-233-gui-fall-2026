@@ -1,3 +1,5 @@
+package com.abdullah;
+
 import javax.swing.SwingUtilities;
 
 public class Main {
@@ -8,5 +10,6 @@ public class Main {
             HelloWorldSwing app = new HelloWorldSwing();
             app.createAndShowGUI();
         });
+        System.out.println("Main method has completed execution.");
     }
 }
