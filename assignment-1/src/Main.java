@@ -1,4 +1,3 @@
-package com.abdullah;
 
 import javax.swing.SwingUtilities;
 
@@ -7,9 +6,8 @@ public class Main {
         // We still use the Event Dispatch Thread for thread safety
         SwingUtilities.invokeLater(() -> {
             // Create an instance of the separate class and call its method
-            HelloWorldSwing app = new HelloWorldSwing();
+            ButtonSwing app = new ButtonSwing();
             app.createAndShowGUI();
         });
-        System.out.println("Main method has completed execution.");
     }
 }

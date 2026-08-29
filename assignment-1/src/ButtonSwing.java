@@ -1,9 +1,7 @@
-package com.abdullah;
+import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 
-public class HelloWorldSwing {
+public class ButtonSwing {
     
     // Changed from private static to public so Main can call it
     public void createAndShowGUI() {
@@ -11,8 +9,9 @@ public class HelloWorldSwing {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 200);
 
-        JLabel label = new JLabel("Hello, World!", SwingConstants.CENTER);
-        frame.getContentPane().add(label);
+        //JLabel label = new JLabel("Hello, World!", SwingConstants.CENTER);
+        JButton button = new JButton("Click Me");
+        frame.getContentPane().add(button, "South");
 
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
