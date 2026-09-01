@@ -11,7 +11,7 @@ public class ButtonSwing {
 
         //JLabel label = new JLabel("Hello, World!", SwingConstants.CENTER);
         JButton button = new JButton("Click Me");
-        frame.getContentPane().add(button, "South");
+        frame.add(button, "Center");
 
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
